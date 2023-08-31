@@ -1,0 +1,235 @@
+#welcome-section{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#welcome-section{
+    background-color: #B6DCFE;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+#welcome-section h1{
+    color:#0b698b;
+}
+#weclcome-section p{
+    color:#f2f2f2;
+}
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #0b698b;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Alumni Sans Inline One', cursive;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+#navbar h2{
+    width: 20%;
+    margin: 0.5rem 2rem;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+#navbar ul li{
+    margin: 0 2rem;
+}
+.carousel-item  , p{
+    color:#9CD3d8;
+    font-weight: bold;
+
+}
+.carousel-item h5{
+    color:black;
+    font-weight: bold;
+}
+.space{
+    margin-top: 2em;
+}
+.carousel {
+    width:640px;
+    height:360px;
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+.about{
+    color:black;
+    display:flex;
+    text-align: center;
+    padding: 4%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    justify-content: center;
+   
+}
+
+#navbar a{
+    font-size: 1.6rem;
+    color: #f2f2f2;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    color: #9cd3d8;
+    text-decoration: none;
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+.welc{
+    color:black;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+#project-tile{
+    padding: 20px 10px;
+    display:flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap:wrap;
+    }
+.project-tile{
+    text-decoration: none;
+}
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      
+      section{
+        flex-basis: 30%;
+        text-align: center;
+        padding: 4%;
+        min-width: 250px;
+        margin-bottom: 3%;
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        color: white;
+      }
+      section:hover{
+        transform: translateY(-0.75em);
+    cursor: pointer;
+    transition-duration: 0.8s;
+    box-shadow: 0 0.4em 0.45em -0.2em #0b698b;
+      }
+      section img{ 
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 2%;
+        object-fit: cover;
+      }
+      section h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      section p { 
+        line-height: 20px;
+        font-size: 14px;
+      }
+       h1{
+        
+       text-align: center;
+      }
+
+      footer{
+        display:block;
+        text-align: center;
+        color: #f2f2f2;
+        background-color:#0b698b
+      }
+      #profile-img{
+        width:  100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      
+#about{
+    background-color: #B6DCFE;
+}
+.four{color:black;
+
+}
+ @media (max-width: 1500px){
+        #navbar{
+            flex-direction: column;
+            justify-items: center;
+        }
+        #navbar h2{
+            width: 100%;
+            font-size: 3rem;
+            text-align: center;
+        }
+        
+        #navbar ul{
+            list-style: none;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }   
+        .carousel-item  , p{
+    color:#9CD3d8;
+    font-weight: bold;
+
+}
+.carousel-item h5{
+    color:black;
+    font-weight: bold;
+}
+
+    }
+    @media (max-width: 900px){
+        #navbar{
+            text-align: center;
+            width:100%;
+            justify-items:center;
+            flex-direction:column;
+            list-style-type: none;
+            display: flex;
+            column-gap: 0.75rem;
+            
+        }
+        .carousel{
+            width:100%;
+        }
+        .carousel-item  , p{
+            color:#9CD3d8;
+            font-weight: bold;
+        
+        }
+        .carousel-item h5{
+            color:black;
+            font-weight: bold;
+        }
+    }
+    /* Carousel */
+.carousel-caption {
+    display: none; /* Hide by default */
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for better readability */
+    bottom: 10%; /* Adjust position if needed */
+}
+
+.carousel-item:hover .carousel-caption {
+    display: block; /* Show on hover */
+}
